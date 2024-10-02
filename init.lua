@@ -1,5 +1,6 @@
 -- Set up using: https://www.youtube.com/watch?v=vdn_pKJUda8&ab_channel=JoseanMartinez
 
+
 require("sofiabesenski.plugins-setup")
 require("sofiabesenski.plugins.comment")
 require("sofiabesenski.plugins.lsp.mason")

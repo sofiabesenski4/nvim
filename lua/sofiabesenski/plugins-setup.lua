@@ -65,6 +65,10 @@ return packer.startup(function(use)
 
   use("neovim/nvim-lspconfig")
 
+  use({
+    "neanias/everforest-nvim",
+  })
+  
   if packer_bootstrap then
     require("packer").sync()
   end

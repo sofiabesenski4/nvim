@@ -11,7 +11,7 @@ keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- don't copy the character into a register when we delete using x.
-keymap.set("n", "x", "_x")
+keymap.set("n", "x", '"_x')
 
 -- Add keybindings for splitting windows, making them equal, and closing
 keymap.set("n", "<leader>|", "<C-w>v")
@@ -19,6 +19,21 @@ keymap.set("n", "<leader>-", "<C-w>s")
 keymap.set("n", "<leader>se", "<C-w>=")
 keymap.set("n", "<leader>x", ":close<CR>")
 
+-- Create toggle for colour scheme
+local function toggle_theme()
+  if vim.opt.background:get() == "dark" then
+    vim.opt.background = "light"
+    -- In my case it was unnecessary to set theme directly,
+    -- as tokyonight reacted to change of vim.opt.background
+    -- vim.cmd("colorscheme tokyonight-day")
+  else
+    vim.opt.background = "dark"
+    -- vim.cmd("colorscheme tokyonight-moon")
+  end
+end
+
+-- also define the keymap
+vim.keymap.set("n", "<leader>t", toggle_theme, {})
 
 -- Add keybindings for navigating the windows.
 keymap.set("n", "<leader><Left>", "<C-w>h")

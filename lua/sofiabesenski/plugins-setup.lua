@@ -42,7 +42,9 @@ return packer.startup(function(use)
   use("nvim-tree/nvim-tree.lua")
 
   -- status line
-  use("nvim-lualine/lualine.nvim")
+  use{"nvim-lualine/lualine.nvim",
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
 
   -- Telescope
   use({"nvim-telescope/telescope-fzf-native.nvim", run = "make"})
@@ -67,6 +69,10 @@ return packer.startup(function(use)
 
   use({
     "neanias/everforest-nvim",
+  })
+
+  use ({
+    "declancm/cinnamon"
   })
   
   if packer_bootstrap then

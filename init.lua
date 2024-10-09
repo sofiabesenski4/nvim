@@ -3,6 +3,7 @@
 
 require("sofiabesenski.plugins-setup")
 require("sofiabesenski.plugins.comment")
+require("sofiabesenski.plugins.cinnamon")
 require("sofiabesenski.plugins.lsp.mason")
 require("sofiabesenski.plugins.telescope")
 require("sofiabesenski.plugins.nvim-cmp")

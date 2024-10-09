@@ -53,8 +53,8 @@ keymap.set("n", "<leader>z", ":MaximizerToggle<CR>")
 
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
-keymap.set("n", "<leader>E", ":NvimTreeToggle<CR>")
+keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<CR>")
+keymap.set("n", "<leader>E", ":NvimTreeFindFileToggle<CR>")
 
 -- telescope
 keymap.set("n", "<leader>p", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore

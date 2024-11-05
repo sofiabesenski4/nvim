@@ -45,9 +45,6 @@ keymap.set("n", "<leader>j", "<C-w>j")
 keymap.set("n", "<leader>k", "<C-w>k")
 keymap.set("n", "<leader>l", "<C-w>l")
 
--- Map :E to :Explore
-keymap.set("c", "E", "Explore")
-
 -- Maximize/restore vim windows
 keymap.set("n", "<leader>z", ":Maximize<CR>")
 

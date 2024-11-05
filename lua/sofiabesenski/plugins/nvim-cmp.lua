@@ -11,7 +11,7 @@ end
 -- load friendly-snippets
 require("luasnip/loaders/from_vscode").lazy_load()
 
-vim.opt.completeopt = "menu,menuone,noselect"
+vim.opt.completeopt = "menu"
 
 cmp.setup({
   snippet = {

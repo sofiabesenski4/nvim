@@ -23,14 +23,19 @@ end
 return packer.startup(function(use)
   use("wbthomason/packer.nvim")
 
-  -- literally just a git repo
-  use("bluz71/vim-nightfly-guicolors")
+  -- colour scheme
+  use({
+    "neanias/everforest-nvim",
+  })
 
   -- for navigating between the nvim windows using CTRL+h/j/k/l 
   use("christoomey/vim-tmux-navigator")
 
   -- for focusing and minimizing windows
-  use("szw/vim-maximizer")
+  use {
+    'declancm/maximize.nvim',
+    config = function() require('maximize').setup() end
+  }
 
   -- for using ds/di etc and quickly modifying text with brackets/etc.
   use("tpope/vim-surround")
@@ -43,37 +48,18 @@ return packer.startup(function(use)
 
   -- status line
   use{"nvim-lualine/lualine.nvim",
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    requires = { 'nvim-tree/nvim-web-devicons' }
   }
 
   -- Telescope
   use({"nvim-telescope/telescope-fzf-native.nvim", run = "make"})
   use({"nvim-telescope/telescope.nvim", branch = "0.1.x" })
 
-
-  -- autocomplete
-  use("hrsh7th/nvim-cmp")
-  use("hrsh7th/cmp-buffer")
-  use("hrsh7th/cmp-path")
-
-  -- snippets
-  use("L3MON4D3/LuaSnip")
-  use("saadparwaiz1/cmp_luasnip")
-  use("rafamadriz/friendly-snippets")
-
   -- managing and installing lsp servers
   use("williamboman/mason.nvim")
   use("williamboman/mason-lspconfig.nvim")
 
   use("neovim/nvim-lspconfig")
-
-  use({
-    "neanias/everforest-nvim",
-  })
-
-  use ({
-    "declancm/cinnamon"
-  })
   
   if packer_bootstrap then
     require("packer").sync()

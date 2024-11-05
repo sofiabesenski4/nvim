@@ -74,36 +74,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
-    loaded = true,
-    path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
-  },
-  ["cmp-buffer"] = {
-    loaded = true,
-    path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/cmp-buffer",
-    url = "https://github.com/hrsh7th/cmp-buffer"
-  },
-  ["cmp-path"] = {
-    loaded = true,
-    path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/cmp-path",
-    url = "https://github.com/hrsh7th/cmp-path"
-  },
-  cmp_luasnip = {
-    loaded = true,
-    path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
-    url = "https://github.com/saadparwaiz1/cmp_luasnip"
-  },
   ["everforest-nvim"] = {
-    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15everforest\frequire\0" },
     loaded = true,
     path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/everforest-nvim",
     url = "https://github.com/neanias/everforest-nvim"
-  },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -120,10 +94,11 @@ _G.packer_plugins = {
     path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["nvim-cmp"] = {
+  ["maximize.nvim"] = {
+    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rmaximize\frequire\0" },
     loaded = true,
-    path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/nvim-cmp",
-    url = "https://github.com/hrsh7th/nvim-cmp"
+    path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/maximize.nvim",
+    url = "https://github.com/declancm/maximize.nvim"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -134,6 +109,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -155,16 +135,6 @@ _G.packer_plugins = {
     path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-maximizer"] = {
-    loaded = true,
-    path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/vim-maximizer",
-    url = "https://github.com/szw/vim-maximizer"
-  },
-  ["vim-nightfly-guicolors"] = {
-    loaded = true,
-    path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
-    url = "https://github.com/bluz71/vim-nightfly-guicolors"
-  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/sofiabesenski/.local/share/nvim/site/pack/packer/start/vim-surround",
@@ -178,10 +148,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: everforest-nvim
-time([[Config for everforest-nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15everforest\frequire\0", "config", "everforest-nvim")
-time([[Config for everforest-nvim]], false)
+-- Config for: maximize.nvim
+time([[Config for maximize.nvim]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rmaximize\frequire\0", "config", "maximize.nvim")
+time([[Config for maximize.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

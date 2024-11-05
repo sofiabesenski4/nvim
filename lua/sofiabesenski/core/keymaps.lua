@@ -49,7 +49,7 @@ keymap.set("n", "<leader>l", "<C-w>l")
 keymap.set("c", "E", "Explore")
 
 -- Maximize/restore vim windows
-keymap.set("n", "<leader>z", ":MaximizerToggle<CR>")
+keymap.set("n", "<leader>z", ":Maximize<CR>")
 
 
 -- nvim-tree

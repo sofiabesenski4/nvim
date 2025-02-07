@@ -24,6 +24,8 @@ local plugins = {
     "neanias/everforest-nvim"
   },
 
+  {"github/copilot.vim"},
+
   -- for navigating between the nvim windows using CTRL+h/j/k/l
   {"christoomey/vim-tmux-navigator"},
 

@@ -16,7 +16,14 @@ telescope.setup({
         ["<C-k>"] = actions.move_selection_previous,
         ["<C-j>"] = actions.move_selection_next,
         ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+        ["<C-u>"] = actions.cycle_history_next,
+        ["<C-r>"] = actions.cycle_history_prev,
       }
+    }
+  },
+  pickers = {
+    find_files = {
+      find_command = {"rg", "--files", "--sortr=modified"}
     }
   }
 })

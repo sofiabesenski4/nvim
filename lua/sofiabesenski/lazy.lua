@@ -17,12 +17,16 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- https://vi.stackexchange.com/a/5318/7339
+vim.g.matchparen_timeout = 5 
+vim.g.matchparen_insert_timeout = 5
+
 
 local plugins = {
-  -- colour scheme
+ --  colour scheme
   {
     "neanias/everforest-nvim"
-  },
+ },
 
   {"github/copilot.vim"},
 
@@ -39,7 +43,8 @@ local plugins = {
   {"tpope/vim-surround"},
 
   -- for functions that are d in more complex lua setups
-  {"nvim-lua/plenary.nvim"},
+  -- Trying to figure out if this is causing the laggy issues.
+  -- {"nvim-lua/plenary.nvim"},
 
   -- file explorer
   {"nvim-tree/nvim-tree.lua"},
@@ -54,9 +59,9 @@ local plugins = {
   {"nvim-telescope/telescope.nvim", branch = "0.1.x" },
 
   -- managing and installing lsp servers
-  {"williamboman/mason.nvim"},
-  {"williamboman/mason-lspconfig.nvim"},
-  {"neovim/nvim-lspconfig"}
+--  {"williamboman/mason.nvim"},
+--  {"williamboman/mason-lspconfig.nvim"},
+--  {"neovim/nvim-lspconfig"}
 }
 
 -- Setup lazy.nvim
